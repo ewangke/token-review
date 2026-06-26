@@ -34,20 +34,37 @@ report (written to `/tmp/` and opened in your browser).
 
 ## Install
 
-The skill expects to live at `~/.claude/skills/token-review`. Clone it straight
-there:
+The skill lives at `~/.claude/skills/token-review`. Pick whichever method you
+like — all three land the same files there.
+
+### One-line install via npx (recommended)
+
+Requires Node.js 16.7+. No npm account or clone needed — npx runs the installer
+straight from the repo:
+
+```bash
+npx github:<OWNER>/token-review
+```
+
+(If the package is also published to npm: `npx token-review-skill`.)
+
+The installer copies the skill into `~/.claude/skills/token-review`, checks that
+Python 3 is on your PATH, and prints next steps.
+
+### Clone
 
 ```bash
 git clone <REPO_URL> ~/.claude/skills/token-review
 ```
 
-If you cloned elsewhere, either move it or symlink it into place:
+If you cloned elsewhere, symlink it into place:
 
 ```bash
 ln -s /path/to/token-review ~/.claude/skills/token-review
 ```
 
-Restart Claude Code (or start a new session) so it picks up the skill.
+After any method, restart Claude Code (or start a new session) so it picks up
+the skill.
 
 ## Usage
 
@@ -98,6 +115,9 @@ token-review/
 ├── scripts/
 │   ├── analyze.py        # the analyzer (stdlib only)
 │   └── render_html.py    # HTML renderer invoked by analyze.py
+├── bin/
+│   └── install.js        # npx installer (copies the skill into place)
+├── package.json          # npx entry point
 ├── README.md
 └── LICENSE
 ```

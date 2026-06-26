@@ -1,0 +1,27 @@
+{
+  "name": "token-review-skill",
+  "version": "1.0.0",
+  "description": "One-line installer for the token-review Claude Code skill — reviews Claude Code token consumption across recent sessions.",
+  "bin": {
+    "token-review-skill": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "scripts/",
+    "SKILL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.7.0"
+  },
+  "keywords": [
+    "claude-code",
+    "claude",
+    "skill",
+    "token",
+    "usage",
+    "cost"
+  ],
+  "license": "MIT"
+}

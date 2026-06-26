@@ -6,6 +6,9 @@ __pycache__/
 .omc/
 .session-stats.json
 
+# Node / npm
+node_modules/
+
 # Generated reports
 token-review-*.html
 
