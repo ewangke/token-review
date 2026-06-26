@@ -43,7 +43,7 @@ Requires Node.js 16.7+. No npm account or clone needed — npx runs the installe
 straight from the repo:
 
 ```bash
-npx github:<OWNER>/token-review
+npx github:ewangke/token-review
 ```
 
 (If the package is also published to npm: `npx token-review-skill`.)
@@ -54,7 +54,7 @@ Python 3 is on your PATH, and prints next steps.
 ### Clone
 
 ```bash
-git clone <REPO_URL> ~/.claude/skills/token-review
+git clone https://github.com/ewangke/token-review.git ~/.claude/skills/token-review
 ```
 
 If you cloned elsewhere, symlink it into place:
