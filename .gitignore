@@ -1,0 +1,13 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Runtime artifacts from Claude Code / OMC
+.omc/
+.session-stats.json
+
+# Generated reports
+token-review-*.html
+
+# macOS
+.DS_Store
